@@ -1,0 +1,69 @@
+#portal-header {
+    margin-bottom: 50px;
+    box-shadow: 0 4px 2px -2px grey;
+}
+
+/* --------- TOPBAR --------- */
+#topbar {
+    background-color: slategrey;
+    height: 100px;
+    display: flex;
+}
+
+#topbar #logo-wrapper {
+    width: 100px;
+}
+
+#topbar #logo-wrapper #portal-logo {
+    width: 100%;
+    height: 100%;
+}
+
+#topbar #title-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topbar #title-wrapper #portal-title {
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* --------- NAVIGATION --------- */
+
+#navigation {
+    background-color: #9eafc3;
+    height: 50px;
+}
+
+#navigation #navigation-wrapper {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+#navigation #navigation-wrapper .nav-element  {
+    height: 100%;
+}
+
+#navigation #navigation-wrapper .nav-element:hover {
+    background-color: #aebcce;
+}
+
+#navigation #navigation-wrapper .nav-element a {
+    padding: 0 10px 0 10px;
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

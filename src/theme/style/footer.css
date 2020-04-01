@@ -1,0 +1,47 @@
+#portal-footer {
+    margin-top: 50px;
+}
+
+/* --------- UPPER FOOTER --------- */
+
+#upper-footer {
+    display: flex;
+    background-color: slategrey;
+    height: 100px;
+}
+
+#upper-footer #site-actions-wrapper {
+    list-style: none;
+    padding: 15px 20px 15px 20px;
+    margin: 0;
+}
+
+#upper-footer #site-actions-wrapper .site-action {
+    margin: 5px 0 5px 0;
+}
+
+/* --------- LOWER FOOTER --------- */
+
+#lower-footer {
+    background-color: #4d5a69;
+    height: 50px;
+}
+
+#lower-footer #shortcut-wrapper {
+    padding: 0 10px 0 10px;;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#lower-footer #shortcut-wrapper .shortcut {
+    display: inline-block;
+    color: white;
+    font-family: monospace;
+    margin: 0 10px 0 10px;
+    text-transform: uppercase;
+    font-size: smaller;
+}
