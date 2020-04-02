@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc29465b-ad7f-4511-b110-7ff8401297de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/theme/components/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/components/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/style/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/style/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/style/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/tests/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/components/content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/style/content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-plone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-plone.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/style/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/style/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +21,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZyPOnDL6dyZulRPJTCWz3t0Vp2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/theme/tests" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -68,8 +67,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585741629084</updated>
-      <workItem from="1585741631457" duration="9085000" />
+      <workItem from="1585741631457" duration="9497000" />
+      <workItem from="1585808335249" duration="1781000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor bootstrap react project, added base layout">
+      <created>1585750880921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585750880921</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,10 +88,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor bootstrap react project, added base layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor bootstrap react project, added base layout" />
   </component>
 </project>

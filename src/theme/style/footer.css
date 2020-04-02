@@ -1,5 +1,5 @@
 #portal-footer {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 /* --------- UPPER FOOTER --------- */
@@ -10,16 +10,6 @@
     height: 100px;
 }
 
-#upper-footer #site-actions-wrapper {
-    list-style: none;
-    padding: 15px 20px 15px 20px;
-    margin: 0;
-}
-
-#upper-footer #site-actions-wrapper .site-action {
-    margin: 5px 0 5px 0;
-}
-
 /* --------- LOWER FOOTER --------- */
 
 #lower-footer {
@@ -27,7 +17,7 @@
     height: 50px;
 }
 
-#lower-footer #shortcut-wrapper {
+#lower-footer #site-actions-wrapper {
     padding: 0 10px 0 10px;;
     margin: 0;
     list-style: none;
@@ -37,11 +27,16 @@
     justify-content: flex-end;
 }
 
-#lower-footer #shortcut-wrapper .shortcut {
+#lower-footer #site-actions-wrapper .site-action a {
     display: inline-block;
     color: white;
     font-family: monospace;
     margin: 0 10px 0 10px;
     text-transform: uppercase;
     font-size: smaller;
+    text-decoration: none;
+}
+
+#lower-footer #site-actions-wrapper .site-action a:hover {
+    color: #bebebe;
 }
