@@ -1,7 +1,7 @@
 import React, {Component}  from 'react';
-import logo from '../images/logo.svg';
 import '../style/header.css';
 import Navigation from "./sub_components/navigation";
+import Topbar from "./sub_components/topbar";
 import ploneAPI from '../../plone-api'
 
 class Header extends Component {
@@ -29,13 +29,7 @@ class Header extends Component {
   render() {
     return (
       <div id="portal-header">
-        <div id="topbar">
-          <div id="logo-wrapper">
-            <a href={this.state.apiData['@id']}>
-              <img src={this.state.apiData['@id']+'/logo.png'} id="portal-logo" alt="logo" />
-            </a>
-          </div>
-        </div>
+        <Topbar apiData={this.state.apiData} />
         <Navigation navigation={this.state.apiData.items} />
       </div>
     );
