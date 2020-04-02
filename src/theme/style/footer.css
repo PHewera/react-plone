@@ -6,14 +6,14 @@
 
 #upper-footer {
     display: flex;
-    background-color: slategrey;
+    background-color: #0083be;
     height: 100px;
 }
 
 /* --------- LOWER FOOTER --------- */
 
 #lower-footer {
-    background-color: #4d5a69;
+    background-color: #026592;
     height: 50px;
 }
 
@@ -38,5 +38,5 @@
 }
 
 #lower-footer #site-actions-wrapper .site-action a:hover {
-    color: #bebebe;
+    color: #b7e9ff;
 }

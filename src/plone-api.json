@@ -1,0 +1,7 @@
+{
+  "adress": "http://localhost",
+  "port": 8080,
+  "id": "Plone",
+  "user": "admin",
+  "password": "admin"
+}

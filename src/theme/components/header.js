@@ -1,27 +1,46 @@
-import React from 'react';
+import React, {Component}  from 'react';
 import logo from '../images/logo.svg';
 import '../style/header.css';
+import Navigation from "./sub_components/navigation";
+import ploneAPI from '../../plone-api'
 
-function Header() {
-  return (
-    <div id="portal-header">
-      <div id="topbar">
-        <div id="logo-wrapper">
-          <img src={logo} id="portal-logo" alt="logo" />
+class Header extends Component {
+
+  state = {
+    apiData: []
+  };
+
+  api = ploneAPI.adress + ':' + ploneAPI.port + '/' + ploneAPI.id;
+
+  componentDidMount() {
+    fetch(this.api, {
+      method: 'get',
+      headers: {
+        Accept: 'application/json'
+      },
+    })
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ apiData: data});
+    })
+    .catch(console.log)
+  }
+
+  render() {
+    return (
+      <div id="portal-header">
+        <div id="topbar">
+          <div id="logo-wrapper">
+            <a href={this.state.apiData['@id']}>
+              <img src={this.state.apiData['@id']+'/logo.png'} id="portal-logo" alt="logo" />
+            </a>
+          </div>
         </div>
-        <div id="title-wrapper">
-          <span id="portal-title">Portal Title</span>
-        </div>
+        <Navigation navigation={this.state.apiData.items} />
       </div>
-      <div id="navigation">
-        <ul id="navigation-wrapper">
-          <li className="nav-element"><a href="#">Nav Element 1</a></li>
-          <li className="nav-element"><a href="#">Nav Element 2</a></li>
-          <li className="nav-element"><a href="#">Nav Element 3</a></li>
-        </ul>
-      </div>
-    </div>
-  );
+    );
+  }
 }
+
 
 export default Header;
