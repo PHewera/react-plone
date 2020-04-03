@@ -32,13 +32,12 @@ class Theme extends Component {
     };
 
     this.fetchApiData = this.fetchApiData.bind(this);
-    this.handleURLClick = this.handleURLClick.bind(this)
+    this.fetchApiContentDataOnClick = this.fetchApiContentDataOnClick.bind(this)
   }
 
-  handleURLClick(e, targetURL) {
+  fetchApiContentDataOnClick(e, targetURL) {
     e.preventDefault();
-    this.setState({apiURLS: {...this.state.apiURLS, content: targetURL}});
-    this.fetchApiData(this.state.apiURLS.content, 'content');
+    this.fetchApiData(targetURL, 'content');
   };
 
   fetchApiData(url, state){
@@ -66,8 +65,8 @@ class Theme extends Component {
       <div className='container'>
         <header id="header-container">
           <div id="portal-header">
-            <Topbar content={this.state.apiData.content} />
-            <Navigation navigation={this.state.apiData.navigation} action={this.handleURLClick}/>
+            <Topbar content={this.state.apiData.content} action={this.fetchApiContentDataOnClick} />
+            <Navigation navigation={this.state.apiData.navigation} action={this.fetchApiContentDataOnClick} />
           </div>
         </header>
         <div id="main-container">
