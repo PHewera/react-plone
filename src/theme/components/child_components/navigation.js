@@ -1,17 +1,7 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 
 class Navigation extends Component {
-
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    e.preventDefault();
-//    Content.setState({api: e.target.href});
-  };
 
   render() {
     return (
@@ -20,7 +10,7 @@ class Navigation extends Component {
           {typeof this.props.navigation.items !== "undefined" &&
            Object.entries(this.props.navigation.items).map((item, idx) => (
              <li className="nav-element" key={idx}>
-               <a href={item[1]['@id']} onClick={this.handleClick}>{item[1].title}</a>
+               <a href={item[1]['@id']} onClick={(e) => this.props.action(e, item[1]['@id'])}>{item[1].title}</a>
              </li>
            ))
           }

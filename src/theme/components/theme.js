@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import '../style/content.css';
-import '../style/index.css'
-import '../style/header.css'
-import '../style/footer.css'
+import '../style/index.css';
+import '../style/header.css';
+import '../style/footer.css';
 import ploneAPI from "../../plone-api";
 import Topbar from "./child_components/topbar";
 import Navigation from "./child_components/navigation";
@@ -31,8 +31,15 @@ class Theme extends Component {
       }
     };
 
-    this.fetchApiData = this.fetchApiData.bind(this)
+    this.fetchApiData = this.fetchApiData.bind(this);
+    this.handleURLClick = this.handleURLClick.bind(this)
   }
+
+  handleURLClick(e, targetURL) {
+    e.preventDefault();
+    this.setState({apiURLS: {...this.state.apiURLS, content: targetURL}});
+    this.fetchApiData(this.state.apiURLS.content, 'content');
+  };
 
   fetchApiData(url, state){
     fetch(url, {
@@ -60,7 +67,7 @@ class Theme extends Component {
         <header id="header-container">
           <div id="portal-header">
             <Topbar content={this.state.apiData.content} />
-            <Navigation navigation={this.state.apiData.navigation} />
+            <Navigation navigation={this.state.apiData.navigation} action={this.handleURLClick}/>
           </div>
         </header>
         <div id="main-container">

@@ -6,8 +6,9 @@ class Content extends Component {
   render() {
     return (
       <div id='portal-content'>
-        <h1>Dummy Content</h1>
-        <span>{this.props.content['@id']}</span>
+        <h1>{this.props.content.title}</h1>
+        <h3>{this.props.content.description}</h3>
+        <div id='content-core' dangerouslySetInnerHTML={{__html: this.props.content.text && this.props.content.text.data}} />
       </div>
     );
   }
