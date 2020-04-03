@@ -30,7 +30,7 @@ class Header extends Component {
     return (
       <div id="portal-header">
         <Topbar apiData={this.state.apiData} />
-        <Navigation navigation={this.state.apiData.items} />
+        <Navigation  />
       </div>
     );
   }

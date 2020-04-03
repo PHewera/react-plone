@@ -1,7 +1,8 @@
 import React from 'react';
 import '../style/content.css';
 
-function Content() {
+
+const Content = ({ apiData }) => {
   return (
     <div id="portal-content">
       <h3>Dummy Content</h3>
@@ -16,7 +17,7 @@ function Content() {
         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       </span>
     </div>
-  );
-}
+  )
+};
 
 export default Content;
