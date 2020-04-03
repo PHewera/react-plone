@@ -4,11 +4,11 @@ body {
 
 /* --------- STICKY FOOTER --------- */
 
-html {
+html, body, #outer-wrapper {
     height: 100%;
 }
 
-html body {
+html body #outer-wrapper .container{
     height: 100%;
     display: flex;
     flex-direction: column;
