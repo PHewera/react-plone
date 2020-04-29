@@ -4,14 +4,28 @@
 
 Simple and customizable [ReactJS](https://reactjs.org/) frontend for [Plone](https://plone.org) using its [RESTful API](https://github.com/plone/plone.restapi).
 
+
+## Install
+
+    cd ../react-plone
+    npm install
+
+
 ## Dependencies
 
 #### NodeJS and NPM  
     sudo apt-get install nodejs npm
     
+#### Update NodeJS and NPM
+    sudo npm cache clean -f
+    sudo npm install -g n
+    sudo n stable
+    
+Note: you may have to restart your console
+    
     
 #### Install plone.restapi
-Make sure you have installed the `plone.restapi` on your Plone site.
+Make sure you have installed the `plone.restapi` package on your Plone site.
 
 #### Allowing CORS
 
@@ -36,23 +50,18 @@ Edit `/src/plone-api.json`
 
       "adress": "http://localhost",
       "port": 8080,
-      "id": "Plone",
-      "user": "admin",
-      "password": "admin"
+      "id": "Plone"
 
 ## Available Scripts
 
     npm start
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
     npm test
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
     npm run build
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
