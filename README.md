@@ -1,5 +1,10 @@
 # ReactJS Plone
 
+## Note: Project archived
+
+### There will be no further development for this project. However it will remain public archived for those interested to get an idea of how to use Plone [RESTful API](https://github.com/plone/plone.restapi) with [ReactJS](https://reactjs.org/).
+
+
 ## Description
 
 Simple and customizable [ReactJS](https://reactjs.org/) frontend for [Plone](https://plone.org) using its [RESTful API](https://github.com/plone/plone.restapi).
